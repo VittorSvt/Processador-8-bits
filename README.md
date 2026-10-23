@@ -129,7 +129,7 @@ Integra todos os blocos: o clock é gerado pelo **PC**, passa pela **ROM** (que 
 1. Instale o [**Logisim-evolution**](https://github.com/logisim-evolution/logisim-evolution) (o projeto foi feito na versão `2.13.21.7`).
 2. Baixe este repositório:
    ```bash
-   git clone https://github.com/VittorSvt/NOME-DO-REPOSITORIO.git
+   git clone https://github.com/VittorSvt/Processador-8-bits.git
    ```
 3. Abra o arquivo `LOBOPT2.circ` no Logisim-evolution.
 4. No circuito `main`, ative a simulação (`Simulate → Ticks Enabled`) ou avance o clock manualmente com `Ctrl + T`.
@@ -140,7 +140,6 @@ Integra todos os blocos: o clock é gerado pelo **PC**, passa pela **ROM** (que 
 ```
 .
 ├── LOBOPT2.circ        # Projeto do Logisim-evolution
-├── LOBOPT1.pdf         # Documentação do projeto
 ├── Imagens/            # Prints usados neste README
 └── README.md
 ```
