@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🐺 Lobo-Guará — Processador de 8 bits
+#  Lobo-Guará — Processador de 8 bits
 
 **Processador de 8 bits projetado do zero no Logisim-evolution**
 *Projeto de Arquitetura de Computadores*
@@ -14,13 +14,13 @@
 
 ---
 
-## 📖 Sobre o projeto
+##  Sobre o projeto
 
 O **Lobo-Guará** é um processador simples de **8 bits** construído no **Logisim-evolution**, com o objetivo de entender na prática como funciona o caminho de dados de uma CPU: da busca da instrução na memória até a escrita do resultado no registrador.
 
 O projeto foi montado por partes (banco de registradores → ULA → RAM → unidade de controle) e depois integrado no circuito `main`.
 
-## 🧩 Componentes
+##  Componentes
 
 | Circuito | Função |
 | :--- | :--- |
@@ -43,7 +43,7 @@ O **PC** envia o endereço para a **ROM**, que devolve a instrução de 8 bits. 
 
 A ULA executa a função escolhida e o resultado é exibido na saída. Por fim, o sinal volta ao **PC**, onde é somado `+4`; caso seja um *branch*, ele salta para o endereço informado.
 
-## 🔧 Detalhes de cada bloco
+##  Detalhes de cada bloco
 
 ### 1. Banco de registradores (`registerBank`)
 
@@ -124,7 +124,7 @@ Integra todos os blocos: o clock é gerado pelo **PC**, passa pela **ROM** (que 
   <img src="Imagens/main.jpg" alt="Circuito principal" width="800"/>
 </div>
 
-## ▶️ Como executar
+##  Como executar
 
 1. Instale o [**Logisim-evolution**](https://github.com/logisim-evolution/logisim-evolution) (o projeto foi feito na versão `2.13.21.7`).
 2. Baixe este repositório:
@@ -135,7 +135,7 @@ Integra todos os blocos: o clock é gerado pelo **PC**, passa pela **ROM** (que 
 4. No circuito `main`, ative a simulação (`Simulate → Ticks Enabled`) ou avance o clock manualmente com `Ctrl + T`.
 5. A ROM já vem com um programa de exemplo carregado; acompanhe os valores nos registradores e na saída.
 
-## 📁 Estrutura do repositório
+##  Estrutura do repositório
 
 ```
 .
@@ -144,12 +144,12 @@ Integra todos os blocos: o clock é gerado pelo **PC**, passa pela **ROM** (que 
 └── README.md
 ```
 
-## 🛠️ Tecnologias
+##  Tecnologias
 
 - [Logisim-evolution](https://github.com/logisim-evolution/logisim-evolution)
 - Lógica digital · Arquitetura de computadores · Projeto de ULA e caminho de dados
 
-## 👨‍💻 Autor
+##  Autor
 
 **Vitor Silva** — estudante de Ciência da Computação
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vitor-silva-386939297/)
