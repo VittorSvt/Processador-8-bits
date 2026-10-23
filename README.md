@@ -30,7 +30,7 @@ O projeto foi montado por partes (banco de registradores → ULA → RAM → uni
 | `ControleDaULaprr` | Unidade de controle (portas lógicas) gerada a partir de uma tabela verdade |
 | `main` | Circuito principal: PC, ROM de instruções e integração de todos os blocos |
 
-## 🗺️ Caminho de dados
+##  Caminho de dados
 
 <div align="center">
   <img src="Imagens/caminho-de-dados.jpg" alt="Diagrama do caminho de dados do Lobo-Guará" width="700"/>
