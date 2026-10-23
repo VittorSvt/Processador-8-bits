@@ -33,7 +33,7 @@ O projeto foi montado por partes (banco de registradores → ULA → RAM → uni
 ## 🗺️ Caminho de dados
 
 <div align="center">
-  <img src="imagens/caminho-de-dados.png" alt="Diagrama do caminho de dados do Lobo-Guará" width="700"/>
+  <img src="imagens/caminho-de-dados.jpg" alt="Diagrama do caminho de dados do Lobo-Guará" width="700"/>
 </div>
 
 O **PC** envia o endereço para a **ROM**, que devolve a instrução de 8 bits. Esses bits são divididos em duas partes de 4 bits:
@@ -59,7 +59,7 @@ Foi o primeiro passo do projeto. Possui 4 registradores de 8 bits e as seguintes
 Códigos de seleção: `00` → 1º registrador · `01` → 2º · `10` → 3º · `11` → 4º.
 
 <div align="center">
-  <img src="imagens/banco-de-registradores.png" alt="Banco de registradores" width="700"/>
+  <img src="imagens/banco-de-registradores.jpg" alt="Banco de registradores" width="700"/>
 </div>
 
 ### 2. ULA (`ULA`)
@@ -78,7 +78,7 @@ A ULA executa as **16 funções** do processador. Possui 5 entradas:
 Internamente, o `Regs0` é dividido em dois túneis de 4 bits (`R0_3` = bits 0 a 3 e `R4_7` = bits 4 a 7), usados em algumas operações.
 
 <div align="center">
-  <img src="imagens/ula.png" alt="ULA do Lobo-Guará" width="700"/>
+  <img src="imagens/ula.jpg" alt="ULA do Lobo-Guará" width="700"/>
 </div>
 
 ### 3. Memória RAM (`RamMemory`)
@@ -86,7 +86,7 @@ Internamente, o `Regs0` é dividido em dois túneis de 4 bits (`R0_3` = bits 0 a
 RAM de **256 × 8 bits** com os sinais `MemRead` (leitura) e `MemWrite` (escrita). É nela que as instruções **load** e **store** leem e gravam dados.
 
 <div align="center">
-  <img src="imagens/ram.png" alt="Memória RAM" width="700"/>
+  <img src="imagens/ram.jpg" alt="Memória RAM" width="700"/>
 </div>
 
 ### 4. Unidade de controle da ULA (`ControleDaULaprr`)
@@ -113,7 +113,7 @@ Recebe 4 bits (`A`, `B`, `C`, `D`) e gera os sinais de controle usados no `main`
 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 1 | 0 |
 
 <div align="center">
-  <img src="imagens/unidade-de-controle.png" alt="Unidade de controle da ULA" width="500"/>
+  <img src="imagens/unidade-de-controle.jpg" alt="Unidade de controle da ULA" width="500"/>
 </div>
 
 ### 5. Circuito principal (`main`)
@@ -121,7 +121,7 @@ Recebe 4 bits (`A`, `B`, `C`, `D`) e gera os sinais de controle usados no `main`
 Integra todos os blocos: o clock é gerado pelo **PC**, passa pela **ROM** (que escolhe qual instrução executar), alimenta o banco de registradores e a unidade de controle, e chega à ULA e à RAM.
 
 <div align="center">
-  <img src="imagens/main.png" alt="Circuito principal" width="800"/>
+  <img src="imagens/main.jpg" alt="Circuito principal" width="800"/>
 </div>
 
 ## ▶️ Como executar
